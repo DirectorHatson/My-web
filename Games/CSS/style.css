@@ -1,0 +1,468 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 1170px;
+    height: 400px;
+    padding: 10px;
+    background-image: url("/img/bg-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: padding-box;
+    overflow: hidden;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Основные контейнеры */
+
+.container-hp {
+    width: 1170x;
+    height: 150px;
+    margin-bottom: 5px;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.container-quest {
+    width: 1170x;
+    height: 305px;
+    margin-bottom: 25px;
+}
+
+.container-chat {
+    width: 1170x;
+    height: 100px;
+    margin: 0;
+    padding: 2px;
+    position: relative;
+}
+
+/* Спелы */
+
+.container-spell {
+    position: absolute;
+    width: 60%;
+    height: 50px;
+    left: 470px;
+    top: 10px;
+    justify-content: space-around;
+    padding: 2px;
+}
+
+.spell {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 40px;
+    transition: all o.3s;
+    opacity: 0.6;
+    box-shadow: 1px 1px 10px black;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 28px;
+    color: white;
+    text-shadow: 3px 3px 10px black;
+    transition: 0.2s;
+}
+
+.spell:hover {
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 70px;
+    transition: all o.3s;
+    opacity: 0.6;
+    box-shadow: 1px 1px 20px black;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 33px;
+    color: white;
+    text-shadow: 3px 3px 10px black;
+}
+
+.spell-1 {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    background-color: blue;
+    border-radius: 40px;
+    transition: all o.3s;
+    opacity: 0.6;
+}
+
+.spell-2 {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    background-color: coral;
+    border-radius: 40px;
+    transition: all o.3s;
+    opacity: 0.6;
+}
+
+.spell-3 {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    background-color: blueviolet;
+    border-radius: 40px;
+    transition: all o.3s;
+    opacity: 0.6;
+}
+
+.spell-4 {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    background-color: firebrick;
+    border-radius: 40px;
+    transition: all o.3s;
+    opacity: 0.6;
+}
+
+.spell-5 {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    background-color: oldlace;
+    border-radius: 40px;
+    transition: all o.3s;
+    opacity: 0.6;
+}
+
+.spell-6 {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    background-color: chocolate;
+    border-radius: 40px;
+    transition: all o.3s;
+    opacity: 0.6;
+}
+
+.spell-7 {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    background-color: darkblue;
+    border-radius: 40px;
+    transition: all o.3s;
+    opacity: 0.6;
+}
+
+.spell-8 {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    background-color: gold;
+    border-radius: 40px;
+    transition: all o.3s;
+    opacity: 0.6;
+}
+
+/* Левая иконка здоровье и мана */
+
+.icon {
+    width: 80%;
+    height: 140px;
+    padding: 5px;
+}
+
+/* Карта */
+
+.map {
+    width: 15%;
+    height: 140px;
+    margin: 0;
+    opacity: 1.5;
+    background-image: url("/img/map-close.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.8s;
+    transition-property: all;
+}
+
+.map:hover {
+    width: 15%;
+    height: 140px;
+    margin: 0;
+    opacity: 1.5;
+    background-image: url("/img/map.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-self: left;
+}
+
+.icon-list {
+    background-image: url("/img/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 9%;
+    height: 65%;
+    border: 2px solid black;
+    border-radius: 100px;
+    background-color: azure;
+    opacity: 0.8;
+    margin-right: 10px;
+    transition: all 0.5s;
+    box-shadow: 1px 1px 10px black;
+}
+
+.icon-list:hover {
+    background-image: url("/img/logohover.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12%;
+    height: 85%;
+    border: 4px solid black;
+    border-radius: 100px;
+    background-color: azure;
+    opacity: 1.5;
+    transition: all 0.5s;
+    box-shadow: 1px 1px 10px black;
+}
+
+
+.hp-list {
+    width: 30%;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: green;
+    opacity: 0.6;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 10px black;
+}
+
+.hp-list:hover {
+    width: 40%;
+    height: 35px;
+    border: 4px solid black;
+    border-radius: 60px;
+    background-color: green;
+    opacity: 0.8;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 10px black;
+
+}
+
+.mana-list {
+    width: 30%;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: blue;
+    opacity: 0.6;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 10px black;
+}
+
+.mana-list:hover {
+    width: 40%;
+    height: 35px;
+    border: 4px solid black;
+    border-radius: 60px;
+    background-color: blue;
+    opacity: 0.8;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 10px black;
+}
+
+.hp-mana {
+    flex-direction: column;
+    width: 80%;
+    height: 140px;
+}
+
+
+
+
+
+/* Квесты  */
+
+.hero {
+    width: 50%;
+    height: 100%;
+    background-image: url("/img/Hero-live.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.evil {
+    width: 50%;
+    height: 100%;
+    background-image: url("/img/evil-live.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: start;
+}
+
+
+
+.hp-evil {
+    width: 100px;
+    height: 10px;
+    border: 2px solid black;
+    background-color: red;
+    border-radius: 100px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.hp-evil:hover {
+    width: 120px;
+    height: 15px;
+    border: 2px solid black;
+    background-color: red;
+    border-radius: 100px;
+    transition: 0.3s;
+    opacity: 0, 8;
+}
+
+.icon-evil {
+    background-image: url("/img/evil-live.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: darkred;
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 100px;
+    margin-bottom: 5px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.icon-evil:hover {
+    background-image: url("/img/evil-live.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+    width: 70px;
+    height: 70px;
+    border: 4px solid black;
+    border-radius: 100px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+/* чат и опыт */
+
+.chat-list {
+    width: 30%;
+    height: 92px;
+    border: 2px solid black;
+    margin-right: 5px;
+    background-color: darkkhaki;
+    opacity: 0.3;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.chat-list:hover {
+    width: 50%;
+    height: 92px;
+    border: 5px solid black;
+    margin-right: 5px;
+    background-color: darkkhaki;
+    opacity: 0.8;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    padding: 2px;
+    box-shadow: 1px 1px 10px black;
+}
+
+
+
+.xp-icon {
+    width: 70%;
+    height: 20px;
+    border: 3px solid black;
+    background-color: blueviolet;
+    align-self: flex-end;
+    font-size: 8px;
+    font-family: fantasy;
+    color: black;
+    text-align: center;
+    opacity: 0.3;
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.xp-icon:hover {
+    width: 80%;
+    height: 32px;
+    border: 5px solid black;
+    background-color: blueviolet;
+    align-self: flex-end;
+    font-size: 12px;
+    font-family: fantasy;
+    color: black;
+    text-align: center;
+    transition: all 0.3s;
+    opacity: 0.8;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px black;
+}
+
+/* Стили для чата */
+
+
+.chat-text {
+    font-family: fantasy;
+    color: white;
+    text-shadow: 0 0 3px black;
+    opacity: 1.5;
+}
+
+.chat-name {
+    font-family: fantasy;
+    color: orangered;
+    text-shadow: 0 0 2px black;
+    opacity: 1.5;
+}
+
+.chat-input {
+    list-style-type: none;
+    background-color: darkkhaki;
+    outline: 2px solid darkkhaki;
+    border-radius: 20px;
+    cursor: auto;
+    padding: 5px;
+}
